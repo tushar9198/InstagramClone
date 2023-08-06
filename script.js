@@ -1,4 +1,9 @@
-let likeBtn = document.querySelector("#notification");
+var likeBtn = document.querySelector("#notification");
+var msg = document.querySelector("#msg");
+
+
+
+
 likeBtn.addEventListener("click", ()=>{
     let notfyBox = document.querySelector('.notification-box');
     notfyBox.classList.toggle("show-notfy-box")
@@ -6,3 +11,7 @@ likeBtn.addEventListener("click", ()=>{
 
 
 //a new section of script 
+
+msg.addEventListener("click",()=>{
+    alert(1)
+})
