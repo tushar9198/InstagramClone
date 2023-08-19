@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --primary-color: #ff0049;
+    --black: rgba(0,0,0,1);
+    --white: rgba(255,255,255,1);
+    --dark-grey: #1c1c1c;
+    --light-grey: rgba(0,0,0,0.1);
+    --cyan: #00c0ff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +32,7 @@ header{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    border-bottom: .5px solid black;
+    border-bottom: .5px solid var(--black);
     padding: 10px 0;
 }
 .story-img{
@@ -32,7 +40,7 @@ header{
     border-radius: 50%;
 }
 .story{
-    border: 4px solid #ff0049;
+    border: 4px solid var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -46,8 +54,8 @@ header{
     position: relative;
 }
 .plus{
-    color: white;
-    background: #00c0ff;
+    color: var(--white);
+    background: var(--cyan);
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -58,7 +66,7 @@ header{
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    border: 1.5px solid white;
+    border: 1.5px solid var(--white);
 }
 .mine{
     font-size: 15px;
@@ -157,7 +165,7 @@ header{
     right: 70px;
     overflow: hidden;
     transition: .2s ease;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 4px var(--light-grey);
     width: 70%;
     height: 200px;
     display: flex;
