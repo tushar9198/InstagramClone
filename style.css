@@ -145,6 +145,9 @@ header{
     margin: 3px 8px;
     padding: 2px;
 }
+.notification-box-close{
+    display: none;
+} 
 .notification-box{
     width: 0;
     height: 0;
@@ -152,18 +155,22 @@ header{
     position: absolute;
     top: 40px;
     right: 70px;
+    overflow: hidden;
+    transition: .2s ease;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+    width: 70%;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
-    transition: .2s ease;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
 }
+/*
 .show-notfy-box{
     width: 70%;
     height: 200px;
 }
+*/
 
 .msg-inbox{
     width: 0;
