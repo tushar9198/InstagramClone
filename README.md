@@ -1,2 +1,1 @@
-# The project on the way
-# Instagram clone only for educational purpose!
+# Version 2 of our project
